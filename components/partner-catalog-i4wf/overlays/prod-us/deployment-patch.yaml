@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog-i4wf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/asaran-tenant/partner-catalog-7/partner-catalog-i4wf@sha256:4836354182fb49b490b3730da6e1b52e07cc98d8401c9b40ecdcc8995619f9de
+        name: my-java-springboot
+        resources: {}
+status: {}
